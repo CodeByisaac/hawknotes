@@ -1,0 +1,46 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "hawknotes",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-04-30",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "hawknotes-db",
+			"database_id": "b9e59a61-8776-4d2e-8d7f-84877627edab",
+			"migrations_dir": "drizzle/migrations"
+		}
+	]
+	// "compatibility_flags": [
+	//   "nodejs_compat"
+	// ],
+	// "vars": {
+	//   "MY_VAR": "my-variable"
+	// },
+	// "kv_namespaces": [
+	//   {
+	//     "binding": "MY_KV_NAMESPACE",
+	//     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	//   }
+	// ],
+	// "r2_buckets": [
+	//   {
+	//     "binding": "MY_BUCKET",
+	//     "bucket_name": "my-bucket"
+	//   }
+	// ],
+	// "d1_databases": [
+	//   {
+	//     "binding": "MY_DB",
+	//     "database_name": "my-database",
+	//     "database_id": ""
+	//   }
+	// ],
+	// "ai": {
+	//   "binding": "AI"
+	// },
+	// "observability": {
+	//   "enabled": true,
+	//   "head_sampling_rate": 1
+	// }
+}

@@ -1,12 +1,18 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "hawknotes",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy --minify",
+		"cf-typegen": "wrangler types --env-interface CloudflareBindings"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.45.2",
+		"hono": "^4.12.15"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20260501.1",
+		"drizzle-kit": "^0.31.10",
+		"wrangler": "^4.87.0"
+	}
 }

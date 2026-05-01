@@ -1,0 +1,18 @@
+# deps
+**/node_modules/
+# build artifacts
+**/dist/
+**/.next/
+**/build/
+# cloudflare / tooling
+backend/.wrangler/
+# env files
+**/.env
+**/.env.*
+!**/.env.example
+backend/.dev.vars
+# logs
+**/*.log
+logs/
+# misc
+.DS_Store
